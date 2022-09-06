@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style/styles.css" />
+		<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+		<title>Products - Purchase Item</title>
+	</head>
+	<body>
+		<div class="layout">
+			<div class="product-detail-container">
+				<div>
+					<div class="image-container">
+						<img
+							src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+							class="product-detail-image"
+						/>
+					</div>
+					<div class="small-images-container">
+						<img
+							src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+							class="small-image"
+						/>
+						<img
+							src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+							class="small-image"
+						/>
+						<img
+							src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+							class="selected-image"
+						/>
+						<img
+							src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+							class="small-image"
+						/>
+					</div>
+				</div>
+
+				<div class="product-detail-desc">
+					<h1>Lab Manuals</h1>
+					<div class="reviews">
+						<div>
+							<img src="/assets/icons/star_24px.png" alt="" />
+							<img src="/assets/icons/star_24px.png" alt="" />
+							<img src="/assets/icons/star_24px.png" alt="" />
+							<img src="/assets/icons/star_24px.png" alt="" />
+							<img src="/assets/icons/star24px.png" alt="" />
+						</div>
+						<p>(20)</p>
+					</div>
+					<h4>Details:</h4>
+					<p>Learning materials for various courses</p>
+					<p class="price">₵50</p>
+					<div class="quantity">
+						<h3>Quantity:</h3>
+						<p class="quantity-desc">
+							<span class="minus"
+								><img src="/assets/icons/minus_24px.png"
+							/></span>
+							<span class="num">01</span>
+							<span class="plus"
+								><img src="/assets/icons/plus_24px.png"
+							/></span>
+						</p>
+					</div>
+					<div class="buttons">
+						<button type="button" onclick="showSnack()" class="add-to-cart">
+							Add to Cart
+						</button>
+						<div id="snackbar">Product Added To Cart</div>
+						<a href="success.html"
+							><button type="button" class="buy-now">Buy Now</button></a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="maylike-products-wrapper">
+				<h2>You may also like</h2>
+				<div class="marquee">
+					<div class="maylike-products-container track">
+						<div class="product-card">
+							<img
+								src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+								height="250"
+								class="product-image"
+							/>
+							<p class="product-name">Advanced Calculus</p>
+							<p class="product-price">₵50</p>
+						</div>
+						<div class="product-card">
+							<img
+								src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+								height="250"
+								class="product-image"
+							/>
+							<p class="product-name">Advanced Calculus</p>
+							<p class="product-price">₵50</p>
+						</div>
+						<div class="product-card">
+							<img
+								src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+								height="250"
+								class="product-image"
+							/>
+							<p class="product-name">Advanced Calculus</p>
+							<p class="product-price">₵50</p>
+						</div>
+						<div class="product-card">
+							<img
+								src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+								height="250"
+								class="product-image"
+							/>
+							<p class="product-name">Advanced Calculus</p>
+							<p class="product-price">₵50</p>
+						</div>
+						<div class="product-card">
+							<img
+								src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+								height="250"
+								class="product-image"
+							/>
+							<p class="product-name">Advanced Calculus</p>
+							<p class="product-price">₵50</p>
+						</div>
+						<div class="product-card">
+							<img
+								src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+								height="250"
+								class="product-image"
+							/>
+							<p class="product-name">Advanced Calculus</p>
+							<p class="product-price">₵50</p>
+						</div>
+						<div class="product-card">
+							<img
+								src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+								height="250"
+								class="product-image"
+							/>
+							<p class="product-name">Advanced Calculus</p>
+							<p class="product-price">₵50</p>
+						</div>
+						<div class="product-card">
+							<img
+								src="/assets/images/ezgif.com-gif-maker-removebg-preview.png"
+								height="250"
+								class="product-image"
+							/>
+							<p class="product-name">Advanced Calculus</p>
+							<p class="product-price">₵50</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-container">
+				<p>2022 &copy; UCC BookShop</p>
+				<p>All rights reserved</p>
+				<p class="icons">
+					<img
+						width="30"
+						src="/assets/icons/Instagram_50px.png"
+						alt="instagram logo"
+					/>
+					<img src="/assets/icons/Twitter_24px.png" alt="twitter logo" />
+				</p>
+			</div>
+		</div>
+
+		<script>
+			function showSnack() {
+				var x = document.getElementById('snackbar');
+				x.className = 'show';
+				setTimeout(function () {
+					x.className = x.className.replace('show', '');
+				}, 3000);
+			}
+
+			const plus = document.querySelector('.plus'),
+				minus = document.querySelector('.minus'),
+				num = document.querySelector('.num');
+
+			let numb = 1;
+
+			plus.addEventListener('click', () => {
+				numb++;
+				numb = numb < 10 ? '0' + numb : numb;
+				num.innerText = numb;
+			});
+
+			minus.addEventListener('click', () => {
+				if (numb > 1) {
+					numb--;
+					numb = numb < 10 ? '0' + numb : numb;
+					num.innerText = numb;
+				}
+			});
+		</script>
+	</body>
+</html>
