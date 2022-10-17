@@ -148,9 +148,9 @@ span.text-red {
   border-radius: 50%;
 }
 
-.favorite.back {
+/* .product-card .favorite {
 	background: #22a9d6;
-}
+} */
 
 .product-card .favorite img{
   width: 20px;
