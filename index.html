@@ -309,7 +309,8 @@
 
 			function showFav() {
 				var x = document.getElementById('snackbarFav');
-				// var y = document.querySelector('.favorite');
+				var y = document.querySelector('.favorite');
+				y.style.backgroundColor = '#22a9d6';
 				x.className = 'show';
 				setTimeout(function () {
 					x.className = x.className.replace('show', '');
