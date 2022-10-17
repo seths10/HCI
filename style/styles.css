@@ -148,7 +148,7 @@ span.text-red {
   border-radius: 50%;
 }
 
-.product-card .favorite:active {
+.favorite.back {
 	background: #22a9d6;
 }
 
